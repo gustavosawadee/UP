@@ -5,8 +5,25 @@
          <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./js/jquerymobile/jquery.mobile-1.4.5.min.css">
         <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="stylesheet" type="text/css" href="./css/table.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
         <script type="text/javascript" src="./js/jquery-2.2.4.min.js"></script>
         <script type="text/javascript" src="./js/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Toggle -->
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
         <!-- script do loading-->
     <script>
@@ -99,8 +116,8 @@
             <div data-role="page" id="pagePrincipal">
                 <div id="mySidenav" class="sidenav">
                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                      <a href="#">Nova Pesquisa</a>
-                      <a href="#">Historico de Pesquisas </a>
+                      <a href="#pageNP">Nova Pesquisa</a>
+                      <a href="#pageHP">Historico de Pesquisas </a>
                       <a href="#">Sair</a>
                     </div>
 
@@ -119,7 +136,327 @@
                         document.getElementById("main").style.marginLeft= "0";
                     }
                     </script>
-            </div>        
+            </div> 
+
+            <div data-role="page" id="pageNP">
+                <div data-role="main" class="tamanhoMinimo">
+                    <h2>Soluction Wash</h2>
+                        <!-- table soluction wash-->
+                        <table>
+                          <tr>
+                            <th style="text-align: center;">Nome</th>
+                            <th style="text-align: center;">Preço Min-R$</th>
+                            <th style="text-align: center;">Preço Max-R$</th>
+                            <th style="text-align: center;">Preço Loja-R$</th>
+                            <th style="text-align: center;">Tem?</th>
+                          </tr>
+                          <tr>
+                            <td>OMO DET PO MULTIAÇÃO 2KG</td>
+                            <td>14,98</td>
+                            <td>16,59</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET LIQ MULTIAÇÃO DILUIDO 3L</td>
+                            <td>32,18</td>
+                            <td>35,69</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>BRILHANTE DET PO BRILHO ATI 2KG</td>
+                            <td>12,08</td>
+                            <td>13,39</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET PO PURO CUIDADO 2KG</td>
+                            <td>15,38</td>
+                            <td>17,09</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET LIQ MULTI PODER ACEL DOYP 1L</td>
+                            <td>10,18</td>
+                            <td>11,39</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+
+                        <h2>Itens Prioritarios</h2>
+
+                        <table>
+                          <tr>
+                            <th style="text-align: center;">Nome</th>
+                            <th style="text-align: center;">Tem?</th>
+                          </tr>
+                          <tr>
+                            <td>OMO DET LIQ PURO CUIDADO 3L(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET MULTIAÇÃO 2,8KG(M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>BRILHANTE DET PO BRILHO ATIVO 2KG(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>BRILHANTE DET PO BRILHO ATIVO 1KG(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>BRILHANTE DET LIQ DILUIDO 3L(M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET PO MULTIAÇÃO 1KG(P)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET PO SPORTS 900G (P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>SURF DET PO FLOR DE LIS 2KG(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET LIQ MULTIAÇÃO DILUIDO 3L(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET LIQ MULTI PODER ACELERADOR DOYP 1L(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>OMO DET PO MULTIAÇÃO 2KG(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                        </table>
+                        <h3>LP?</h3>
+                        <select>
+                            <option value="sim">Sim</option>
+                            <option value="sim" selected>Não</option>
+                        </select>
+                        <br>
+                        <h2>Amaciantes</h2>
+                        <!-- table soluction wash-->
+                        <table>
+                          <tr>
+                            <th style="text-align: center;">Nome</th>
+                            <th style="text-align: center;">Preço Min-R$</th>
+                            <th style="text-align: center;">Preço Max-R$</th>
+                            <th style="text-align: center;">Preço Loja-R$</th>
+                            <th style="text-align: center;">Tem?</th>
+                          </tr>
+                          <tr>
+                            <td>CONFORT AMAC CONC ORIGINAL DOYP 900ML</td>
+                            <td>12,28</td>
+                            <td>13,69</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONC ORIGINAL 1L</td>
+                            <td>15,18</td>
+                            <td>16,79</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONC ORIGINAL 500ML</td>
+                            <td>7,98</td>
+                            <td>8,99</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONC PREM LIRIO 500ML</td>
+                            <td>7,89</td>
+                            <td>8,99</td>
+                            <td><input type="text" name="precoL"></td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                        </table>
+                        <br>
+                        <table>
+                            <h2>Ponto Natural(*Sem cobrança para LP)</h2>
+                            <tr>
+                                <th style="text-align: center;">Nome</th>
+                                <th style="text-align: center;">Tem?</th>
+                              </tr>
+                              <tr>
+                                <td>AMACIANTES CONC C/NO MINIMO 50% DE FACING DO TOTAL UNILEVER</td>
+                                <td><select>
+                                '       <option value="sim">Sim</option>
+                                        <option value="sim" selected>Não</option>
+                                    </select>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>FOFO CONC C/NO MINIMO 10% DE FACING DE CONC UNILEVER</td>
+                                <td><select>
+                                '       <option value="sim">Sim</option>
+                                        <option value="sim" selected>Não</option>
+                                    </select>
+                                </td>
+                              </tr>
+                        </table>
+                        <br>
+                        <h2>Itens Prioritarios</h2>
+
+                        <table>
+                          <tr>
+                            <th style="text-align: center;">Nome</th>
+                            <th style="text-align: center;">Tem?</th>
+                          </tr>
+                          <tr>
+                            <td>FOFO CONC TRADICIONAL 500ML(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONC ORIGINAL 1L(M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONC ORIGINAL DOYP 900ML(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONC ORIGINAL 500ML(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONC PURO CUIDADO 1L(M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CONFORT CONCO PREM LIRIO 500ML(P,M,G)</td>
+                            <td><select>
+                            '       <option value="sim">Sim</option>
+                                    <option value="sim" selected>Não</option>
+                                </select>
+                            </td>
+                          </tr>
+                        </table> 
+                </div>
+            </div>
+            
+            <div data-role="page" id="pageHP">
+                <div data-role="main" class="tamanhoMinimo">
+                    
+                </div>
+            </div>
+
+            
+
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
