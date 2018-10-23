@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 23-Out-2018 às 21:51
+-- Generation Time: 23-Out-2018 às 23:31
 -- Versão do servidor: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -125,6 +125,19 @@ CREATE TABLE IF NOT EXISTS `tb_dressing` (
   `itemPri` varchar(100) DEFAULT NULL,
   `temLoja` tinyint(1) DEFAULT NULL,
   `lp` tinyint(1) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_funcionario`
+--
+
+DROP TABLE IF EXISTS `tb_funcionario`;
+CREATE TABLE IF NOT EXISTS `tb_funcionario` (
+  `nomeF` varchar(100) DEFAULT NULL,
+  `nomeL` text,
+  `data_pesquisa` date DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
