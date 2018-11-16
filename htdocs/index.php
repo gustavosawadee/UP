@@ -1,5 +1,6 @@
 <?php
 	header("Content-Type: application/json; charset=UTF-8");
+	header('Access-Control-Allow-Origin: *');
 	$data = json_decode($_GET["varAll"]); //REQUEST GERAL
 	$host="127.0.0.1"; //data->host
 	$port=3306; //data->port
